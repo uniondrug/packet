@@ -12,14 +12,14 @@
  * WebSite: http://www.janhuang.me
  */
 
-namespace FastD\Binary\Tests;
+namespace Uniondrug\Binary\Tests;
 
-use FastD\Packet\Json;
+use Uniondrug\Packet\Json;
 
 class JsonTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @expectedException \FastD\Packet\Exceptions\PacketException
+     * @expectedException \Uniondrug\Packet\Exceptions\PacketException
      */
     public function testJsonDecodeInvalidData()
     {
@@ -27,7 +27,7 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \FastD\Packet\Exceptions\PacketException
+     * @expectedException \Uniondrug\Packet\Exceptions\PacketException
      */
     public function testJsonEncodeInvalidData()
     {
@@ -38,7 +38,7 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     {
         $ori = [
             'name' => 'janhuang',
-            'age' => 18
+            'age'  => 18,
         ];
 
         $data = Json::encode($ori);

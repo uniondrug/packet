@@ -28,6 +28,7 @@ class Json implements PacketInterface
 
     /**
      * @param $data
+     *
      * @return string
      * @throws PacketException
      */
@@ -42,6 +43,7 @@ class Json implements PacketInterface
 
     /**
      * @param $data
+     *
      * @return array
      * @throws PacketException
      */
@@ -51,6 +53,7 @@ class Json implements PacketInterface
         if (json_last_error()) {
             throw new PacketException(json_last_error_msg());
         }
+
         return $json;
     }
 }

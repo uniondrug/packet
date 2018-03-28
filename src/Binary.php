@@ -25,6 +25,7 @@ class Binary implements PacketInterface
 {
     /**
      * @param $data
+     *
      * @return string
      */
     public static function encode($data)
@@ -38,6 +39,7 @@ class Binary implements PacketInterface
 
     /**
      * @param $str
+     *
      * @return mixed
      * @throws PacketException
      */

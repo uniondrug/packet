@@ -14,7 +14,7 @@
 
 namespace FastD\Binary\Tests;
 
-use FastD\Packet\Binary;
+use Uniondrug\Packet\Binary;
 
 class BinaryTest extends \PHPUnit_Framework_TestCase
 {
@@ -37,7 +37,7 @@ class BinaryTest extends \PHPUnit_Framework_TestCase
     {
         $arr = [
             'name' => 'jan',
-            'age' => 18
+            'age'  => 18,
         ];
 
         $data = Binary::encode($arr);
@@ -59,7 +59,6 @@ class BinaryTest extends \PHPUnit_Framework_TestCase
         $str = 'status';
 
         $binary = Binary::encode($str);
-
 //        echo $binary;
     }
 

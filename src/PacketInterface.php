@@ -28,12 +28,14 @@ interface PacketInterface
 
     /**
      * @param $data
+     *
      * @return mixed
      */
     public static function encode($data);
 
     /**
      * @param $data
+     *
      * @return mixed
      */
     public static function decode($data);
