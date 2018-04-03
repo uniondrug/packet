@@ -1,5 +1,6 @@
 {
   "name": "uniondrug/packet",
+  "description": "Uniondrug Packet Component for uniondrug/framework",
   "authors": [
     {
       "name": "janhuang",
