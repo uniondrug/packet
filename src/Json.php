@@ -42,10 +42,11 @@ class Json implements PacketInterface
     }
 
     /**
-     * @param $data
+     * @param      $data
+     * @param bool $assoc
      *
      * @return array
-     * @throws PacketException
+     * @throws \Uniondrug\Packet\Exceptions\PacketException
      */
     public static function decode($data, $assoc = false)
     {
