@@ -27,18 +27,21 @@ class Json implements PacketInterface
     const SALT_LENGTH = 10;
 
     /**
-     * @param $data
+     * @param     $data
+     *
+     * @param int $options
+     * @param int $depth
      *
      * @return string
-     * @throws PacketException
+     * @throws \Uniondrug\Packet\Exceptions\PacketException
      */
-    public static function encode($data)
+    public static function encode($data, $options = 0, $depth = 512)
     {
         if (!is_array($data)) {
             throw new PacketException('The packet data is invalid. Must be a array.');
         }
 
-        return json_encode($data, JSON_UNESCAPED_UNICODE | JSON_NUMERIC_CHECK);
+        return json_encode($data, $options, $depth);
     }
 
     /**
